@@ -9,8 +9,10 @@
 ## Results:
 * Despite my best efforts I was never able to exceced the 73% accurate rating through multiple optimization trials.
 
-# 1. What variable(s) are the target(s) for your model?
-# 2. What variable(s) are the features for your model?
+# 1. What variable(s) are the target(s) for your model? 
+y value below
+# 2. What variable(s) are the features for your model? 
+x value below
 * All attempts used the target variable of IS_SUCCESSFUL as the y value (target), and the remaining columns as the X value (features).
 
 # 3. What variable(s) should be removed from the input data because they are neither targets nor features?
