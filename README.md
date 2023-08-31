@@ -1,21 +1,29 @@
-# deep-learning-challenge
-# Steve Bennett
+## deep-learning-challenge
+## Steve Bennett
 
-# Overview: 
+## Overview: 
 * I was tasked to design a tool to predict with a binary classifier whether applicants will be successful if funded by Alphabet Soup.
 * It used a CSV file containing over 30,000 entries 
 * I then preprocessed the data and used it to compile, train and evaluate the 4 different models.  
 
-# Results:
+## Results:
 * Despite my best efforts I was never able to exceced the 73% accurate rating through multiple optimization trials.
 
+# 1. What variable(s) are the target(s) for your model?
+# 2. What variable(s) are the features for your model?
 * All attempts used the target variable of IS_SUCCESSFUL as the y value (target), and the remaining columns as the X value (features).
 
+# 3. What variable(s) should be removed from the input data because they are neither targets nor features?
+* Then I expanded out dropping Status, Income_Amt, and even Special_Considerations columns from the features list - netting the same 72.xx% results within a few tenths of a percent.
+
+# 4. How many neurons, layers, and activation functions did you select for your neural network model, and why?
 * Initially I started with 3 hidden layers (AlphabetSoupCharity.ipynb), no batch size, and 100 epochs.  This was part of the initial 72.48% accuracy value.
 * I attempted the base 2 columns dropped of EIN and Name with 100 epochs. Resulting in a 72.xx% result.
 
-* Then I expanded out dropping Status, Income_Amt, and even Special_Considerations columns from the features list - netting the same 72.xx% results within a few tenths of a percent.
+# 5. Were you able to achieve the target model performance?
+* No - all results were 72-73% at the very best.
 
+# 6. What steps did you take in your attempts to increase model performance?
 * During my multiple attempted optimization methods I tried to further adjust by changing batch sizes, epoch sizes, and additional hidden layers did not help push the levels of 75% that we were tasked with. These still resulted with values in the mid to high 72.xx% area.
 
 * Lastly I attempted using elu and sigmoid activation methods for my hidden layers - still not hitting the 73 or higher goals.
